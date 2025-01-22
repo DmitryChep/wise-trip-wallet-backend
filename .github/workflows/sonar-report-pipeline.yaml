@@ -1,0 +1,23 @@
+name: Sonar pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sonar-report:
+    runs-on: macOS-latest
+    steps:
+      - uses: actions/checkout@v4.2.1
+      - uses: actions/setup-java@v4.2.1
+        with:
+          java-version: '22.0.1'
+          distribution: 'temurin'
+      - name: Run Sonarqube report
+        run : |
+          ./mvnw clean test jacoco:report sonar:sonar \
+          -Dsonar.projectKey=Wise-Trip-Wallet \
+          -Dsonar.projectName='Wise Trip Wallet' \
+          -Dsonar.host.url='${{ secrets.SONAR_URL }}' \
+          -Dsonar.token='${{ secrets.SONAR_TOKEN }}'
