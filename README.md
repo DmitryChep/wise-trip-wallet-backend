@@ -1,6 +1,6 @@
-# WiseTripWallet 🌍✈️
+![Logo.gif](docs/Logo.gif)
 
-**WiseTripWallet** is a pet project web-application designed for planning and managing travel budgets, as well as tracking expenses during a trip. It provides users with tools for efficient travel organization, financial control, and expense optimization, ensuring transparency and convenience throughout the travel process.
+**WiseTripWallet** is a web-application(pet project) designed for planning and managing travel budgets, as well as tracking expenses during a trip. It provides users with tools for efficient travel organization, financial control, and expense optimization, ensuring transparency and convenience throughout the travel process.
 
 ## Key Features:
 - **Trip Planning**: Create, edit, and store trip information, including budget, dates, and expense categories.
@@ -17,14 +17,12 @@
 3. **Track Expenses**: Easily add expenses, specifying amounts, categories, and payment methods. The app automatically converts amounts to the selected currency.
 4. **Optimize Budget**: Receive notifications about potential overspending and tips on saving.
 5. **View Reports**: Access a summary report of expenses with charts and details.
-6. **Reviews and Recommendations**: Leave reviews on trips and browse recommendations from fellow travelers.
 
 ## Benefits:
 - **All-in-One Functionality**: Planning, tracking, and analyzing your budget in one app.
 - **User-Friendly Interface**: Intuitive user interaction.
 - **Security**: Data protection, password hashing, and two-factor authentication.
 - **Multi-currency Support**: Support for various currencies with up-to-date exchange rates.
-- **Social Features**: Share experiences and get recommendations from other users.
 
 ## License:
 - **This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.**

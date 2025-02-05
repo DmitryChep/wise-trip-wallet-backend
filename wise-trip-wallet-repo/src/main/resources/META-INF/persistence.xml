@@ -1,0 +1,30 @@
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0">
+
+<persistence-unit name="wise-trip-wallet-unit">
+        <description>Wise Trip Wallet Hibernate</description>
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <class>com.wisetripwallet.model.Budget</class>
+        <class>com.wisetripwallet.model.Category</class>
+        <class>com.wisetripwallet.model.Currency</class>
+        <class>com.wisetripwallet.model.Expense</class>
+        <class>com.wisetripwallet.model.ExpenseCategory</class>
+        <class>com.wisetripwallet.model.Report</class>
+        <class>com.wisetripwallet.model.ReportType</class>
+        <class>com.wisetripwallet.model.Tag</class>
+        <class>com.wisetripwallet.model.TagColour</class>
+        <class>com.wisetripwallet.model.TagExpense</class>
+        <class>com.wisetripwallet.model.Trip</class>
+        <class>com.wisetripwallet.model.TripCurrency</class>
+        <class>com.wisetripwallet.model.User</class>
+
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="$DB_URL"/>
+            <property name="jakarta.persistence.jdbc.user" value="$DB_USER" />
+            <property name="jakarta.persistence.jdbc.password" value="$DB_PASSWORD"/>
+            <property name="hibernate.show_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>
+
