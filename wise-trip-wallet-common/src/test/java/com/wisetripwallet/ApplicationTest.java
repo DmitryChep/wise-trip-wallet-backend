@@ -1,6 +1,6 @@
 package com.wisetripwallet;
 
-public class AppTest {
+public class ApplicationTest {
 
 }
 
